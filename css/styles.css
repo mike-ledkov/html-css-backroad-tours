@@ -35,7 +35,7 @@
   --clr-white: #fff;
   --ff-primary: "Lato", sans-serif;
   --transition: all 0.3s linear;
-  --spacing: 0.25rem;
+  --spacing: 0.15rem;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -95,6 +95,7 @@ h4 {
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
+  max-width: 1200px;
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -133,7 +134,7 @@ p {
   font-size: 0.875rem;
   border: 2px solid transparent;
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
 }
 .btn:hover {
   color: var(--clr-primary-1);
@@ -148,6 +149,37 @@ p {
 /* ====================================================== */
 /* ======================== Hero ======================== */
 /* ====================================================== */
+.hero {
+  min-height: 100vh;
+  /* background: var(--clr-primary-5); */
+  background: linear-gradient(rgb(44, 174, 186, 0.5), rgb(0,0,0,0.5)), url("../images/main.jpeg") center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-banner {
+  text-align: center;
+  color: var(--clr-primary-10);
+  padding: 0 3rem;
+}
+.hero-banner h1 {
+  text-transform: uppercase;
+}
+.hero-banner p {
+  color: var(--clr-white);
+  letter-spacing: var(--spacing);
+}
+.hero-btn {
+  padding: 0.8rem 1.6rem;
+  font-size: 1.25rem;
+  background: var(--clr-white);
+  color: var(--clr-primary-5);
+}
+.hero-btn:hover {
+  color: var(--clr-white);
+  background: transparent;
+  border-color: var(--clr-white);
+}
 
 /* ====================================================== */
 /* ======================== About ======================= */
@@ -175,3 +207,15 @@ p {
 /* ====================================================== */
 /* ======================= Footer ======================= */
 /* ====================================================== */
+
+/* ====================================================== */
+/* ==================== Media queries =================== */
+/* ====================================================== */
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+  .hero-banner {
+    padding: 0;
+  }
+}
