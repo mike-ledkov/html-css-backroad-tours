@@ -1,13 +1,12 @@
 // ********** set date ************
 // select span
-const date = (document.getElementById(
-  "date"
-).innerHTML = new Date().getFullYear());
+const date = document.getElementById("year")
+date.innerHTML = new Date().getFullYear()
 
 // ********** nav toggle ************
 // select button and links
-const navBtn = document.getElementById("nav-toggle");
-const links = document.getElementById("nav-links");
+const navBtn = document.querySelector(".nav-toggle");
+const links = document.querySelector(".nav-links");
 // add event listener
 navBtn.addEventListener("click", () => {
   links.classList.toggle("show-links");
@@ -25,7 +24,7 @@ scrollLinks.forEach(link => {
     const id = e.target.getAttribute("href").slice(1);
     const element = document.getElementById(id);
     //
-    let position = element.offsetTop - 62;
+    let position = element.offsetTop - 69;
 
     window.scrollTo({
       left: 0,

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Backroads || Tour Company</title>
+    <title>Backroad Tours</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     
     <!-- JS -->
-    <script src="app.js" async></script>
+    <script src="./js/app.js" defer></script>
 
     <!-- Fontawesome web -->
     <script src="https://kit.fontawesome.com/16bac2bdb7.js" crossorigin="anonymous" async></script>
@@ -21,37 +21,319 @@
     <!-- header  -->
     <header id="home">
       <!-- navbar -->
-      <nav></nav>
+      <nav class="navbar">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="./images/logo.svg" alt="backroads logo" class="nav-logo">
+            <button type="button" class="nav-toggle" id="nav-toggle">
+              <span class="fa-solid fa-bars"></span>
+            </button>
+          </div>
+          <!-- end of nav header -->
+          <!-- nav links -->
+          <ul class="nav-links">
+            <li>
+              <a href="#home" class="nav-link scroll-link">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="nav-link scroll-link">About</a>
+            </li>
+            <li>
+              <a href="#services" class="nav-link scroll-link">Values</a>
+            </li>
+            <li>
+              <a href="#featured" class="nav-link scroll-link">Featured Tours</a>
+            </li>
+            <li>
+              <a href="#gallery" class="nav-link scroll-link">Gallery</a>
+            </li>
+          </ul>
+          <!-- end of nav links -->
+          <!-- nav icons -->
+          <ul class="nav-icons">
+            <li>
+              <a href="http://facebook.com" class="nav-icon">
+                <span class="fa-brands fa-facebook"></span>
+              </a>
+            </li>
+            <li>
+              <a href="http://twitter.com" class="nav-icon">
+                <span class="fa-brands fa-twitter"></span>
+              </a>
+            </li>
+            <li>
+              <a href="http://vk.com" class="nav-icon">
+                <span class="fa-brands fa-vk"></span>
+              </a>
+            </li>
+          </ul>
+          </div>
+          <!-- end of nav icons -->
+        </div>
+      </nav>
       <!-- hero -->
       <div class="hero">
         <div class="hero-banner">
           <h1>continue exploring</h1>
-          <p>Navigate the planet like never before with our wide range of magnificent tours</p>
+          <p>Navigate the planet like never before with a wide range of our magnificent tours</p>
           <a href="#featured" class="btn hero-btn scroll-link">explore tours</a>
         </div>
       </div>
     </header>
-    <!-- end of header  -->
-
-    <!-- about section -->
-    <!-- end of about section -->
+    <!-- about -->
+    <section id="about">
+      <div class="section-title">
+        <h2>about <span>us</span></h2>
+      </div>
+      <div class="section-center about-center">
+        <article class="about-img">
+          <img src="./images/about.jpeg" alt="photo of a beach" class="about-photo">
+        </article>
+        <article class="about-info">
+          <h3>explore the difference</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia fugit quaerat earum natus tempore. Corrupti facere cumque ipsa dolorem magni.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia fugit quaerat earum natus tempore. Corrupti facere cumque ipsa dolorem magni.</p>
+          <a href="#about" class="btn">read more</a>
+        </article>
+      </div>
+    </section>
 
     <!-- services -->
-    <!--end services -->
-
+    <section class="services" id="services">
+      <div class="section-title">
+        <h2>our <span>values</span></h2>
+      </div>
+      <div class="section-center services-center">
+        <article class="service">
+          <span class="service-icon fa-solid fa-wallet"></span>
+          <div class="service-info">
+            <h3 class="service-title">saving money</h3>
+            <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex expedita porro distinctio placeat laudantium repudiandae?</p>
+          </div>
+        </article>
+        <article class="service">
+          <span class="service-icon fa-solid fa-tree"></span>
+          <div class="service-info">
+            <h3 class="service-title">endless discovery</h3>
+            <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe corrupti numquam quo dolores vitae quidem.</p>
+          </div>
+        </article>
+        <article class="service">
+          <span class="service-icon fa-solid fa-socks"></span>
+          <div class="service-info">
+            <h3 class="service-title">ultimate comfort</h3>
+            <p class="service-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic reiciendis itaque mollitia exercitationem nisi cumque facilis.</p>
+          </div>
+        </article>
+      </div>
+    </section>
     <!-- featured tours -->
-    <!-- end of featured tours -->
-
+    <section id="featured">
+      <div class="section-title">
+        <h2>featured <span>tours</span></h2>
+      </div>
+      <div class="section-center featured-center">
+        <!-- featured tour 1 -->
+        <article class="tour-card">
+          <div class="tour-img-container">
+            <img src="./images/tour-1.jpeg" alt="tibet mountains" class="tour-img">
+            <time class="tour-date">August 26, 2022</time>
+          </div>
+          <div class="tour-info">
+            <div class="tour-title">
+              <h3>Tibet adventure</h3>
+              <span>6 days</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorum rem eligendi repellendus at similique dolor recusandae totam incidunt harum?</p>
+            <div class="tour-footer">
+              <p>
+                <span class="fa-solid fa-map"></span>
+                China
+              </p>
+              <p>From $2100</p>
+            </div>
+          </div>
+        </article>
+        <!-- featured tour 2 -->
+        <article class="tour-card">
+          <div class="tour-img-container">
+            <img src="./images/tour-2.jpeg" alt="girl sitting in the middle of a road in Java Indonesia" class="tour-img">
+            <time class="tour-date">October 1, 2022</time>
+          </div>
+          <div class="tour-info">
+            <h3>best of java</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorum rem eligendi repellendus at similique dolor recusandae totam incidunt harum?</p>
+            <div class="tour-footer">
+              <p>
+                <span class="fa-solid fa-map"></span>
+                Indonesia
+              </p>
+              <p>11 days</p>
+              <p>From $1800</p>
+            </div>
+          </div>
+        </article>
+        <!-- featured tour 3 -->
+        <article class="tour-card">
+          <div class="tour-img-container">
+            <img src="./images/tour-3.jpeg" alt="hong kong at night" class="tour-img">
+            <time class="tour-date">September 15, 2022</time>
+          </div>
+          <div class="tour-info">
+            <h3>Explore Hong Kong</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorum rem eligendi repellendus at similique dolor recusandae totam incidunt harum?</p>
+            <div class="tour-footer">
+              <p>
+                <span class="fa-solid fa-map"></span>
+                Hong Kong
+              </p>
+              <p>5 days</p>
+              <p>From $2500</p>
+            </div>
+          </div>
+        </article>
+        <!-- featured tour 4 -->
+        <article class="tour-card">
+          <div class="tour-img-container">
+            <img src="./images/tour-4.jpeg" alt="elephant throwind the sand on itself in savanna" class="tour-img">
+            <time class="tour-date">December 5, 2022</time>
+          </div>
+          <div class="tour-info">
+            <h3>Kenya Highlights</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorum rem eligendi repellendus at similique dolor recusandae totam incidunt harum?</p>
+            <div class="tour-footer">
+              <p>
+                <span class="fa-solid fa-map"></span>
+                Kenya
+              </p>
+              <p>15 days</p>
+              <p>From $3000</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="featured-btn">
+        <a href="#gallery" class="btn">all tours</a>
+      </div>
+    </section>
     <!-- contact -->
-
-    <!-- end of contact -->
-
+    <section class="contact" id="contact">
+      <div class="section-title contact-title">
+        <h2>contact <span>us</span></h2>
+      </div>
+      <div class="section-center contact-center">
+        <article class="contact-text">
+          <h3>Want latest tour updates?</h3>
+          <p>Subscribe to our newsletters and stay up to date with the latest tour information, offers and deals!</p>
+        </article>
+          <form action="" class="contact-form">
+            <input class="contact-input" type="email" name="email" id="email" placeholder="your email">
+            <button type="submit" class="contact-btn">Subscribe</button>
+          </form>
+      </div>
+    </section>
     <!-- gallery  -->
-
-    <!-- end of gallery  -->
-
+    <section id="gallery">
+      <div class="gallery-center">
+        <!-- single image -->
+        <div class="gallery-img-container">
+          <img src="./images/tour-1.jpeg" alt="tour picture" class="gallery-img">
+          <a href="#gallery" class="gallery-icon">
+            <span class="fa-solid fa-search"></span>
+          </a>
+        </div>
+        <!-- single image -->
+        <div class="gallery-img-container">
+          <img src="./images/tour-2.jpeg" alt="tour picture" class="gallery-img">
+          <a href="#gallery" class="gallery-icon">
+            <span class="fa-solid fa-search"></span>
+          </a>
+        </div>
+        <!-- single image -->
+        <div class="gallery-img-container">
+          <img src="./images/tour-3.jpeg" alt="tour picture" class="gallery-img">
+          <a href="#gallery" class="gallery-icon">
+            <span class="fa-solid fa-search"></span>
+          </a>
+        </div>
+        <!-- single image -->
+        <div class="gallery-img-container">
+          <img src="./images/tour-4.jpeg" alt="tour picture" class="gallery-img">
+          <a href="#gallery" class="gallery-icon">
+            <span class="fa-solid fa-search"></span>
+          </a>
+        </div>
+        <!-- single image -->
+        <div class="gallery-img-container">
+          <img src="./images/tour-5.jpeg" alt="tour picture" class="gallery-img">
+          <a href="#gallery" class="gallery-icon">
+            <span class="fa-solid fa-search"></span>
+          </a>
+        </div>
+        <!-- single image -->
+        <div class="gallery-img-container">
+          <img src="./images/tour-6.jpeg" alt="tour picture" class="gallery-img">
+          <a href="#gallery" class="gallery-icon">
+            <span class="fa-solid fa-search"></span>
+          </a>
+        </div>
+        <!-- single image -->
+        <div class="gallery-img-container">
+          <img src="./images/tour-7.jpeg" alt="tour picture" class="gallery-img">
+          <a href="#gallery" class="gallery-icon">
+            <span class="fa-solid fa-search"></span>
+          </a>
+        </div>
+        <!-- single image -->
+        <div class="gallery-img-container">
+          <img src="./images/tour-8.jpeg" alt="tour picture" class="gallery-img">
+          <a href="#gallery" class="gallery-icon">
+            <span class="fa-solid fa-search"></span>
+          </a>
+        </div>
+      </div>
+    </section>
     <!-- footer -->
-
-    <!-- js -->
+    <footer class="footer">
+      <!-- footer links -->
+      <ul class="footer-links">
+        <li>
+          <a href="#home" class="footer-link scroll-link">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="footer-link scroll-link">About</a>
+        </li>
+        <li>
+          <a href="#services" class="footer-link scroll-link">Values</a>
+        </li>
+        <li>
+          <a href="#featured" class="footer-link scroll-link">Featured Tours</a>
+        </li>
+        <li>
+          <a href="#gallery" class="footer-link scroll-link">Gallery</a>
+        </li>
+      </ul>
+      <!-- footer icons -->
+      <ul class="footer-icons">
+        <li>
+          <a href="http://facebook.com" class="footer-icon">
+            <span class="fa-brands fa-facebook"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com" class="footer-icon">
+            <span class="fa-brands fa-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://vk.com" class="footer-icon">
+            <span class="fa-brands fa-vk"></span>
+          </a>
+        </li>
+      </ul>
+      <!-- copyright -->
+      <p class="copyright">copyright &copy; backroad tours company (<time id="year"></time>). all rights reversed.&MediumSpace;<span class="fa-regular fa-grin-wink"></span></p>
+    </footer>
   </body>
 </html>
